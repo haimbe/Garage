@@ -1,13 +1,13 @@
 public class Siegechauffant {
     double prix = 562.9;
 
-    public class getPrix()
+    public double getPrix()
 
     {
-        return Prix;}
+        return prix;}
 
-        public class toString () {
-        System.out.println("Siège chauffant");
+        public String toString () {
+        return "Siège chauffant";
     }
 
 }

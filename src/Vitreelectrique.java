@@ -1,13 +1,13 @@
 public class Vitreelectrique {
     double prix = 252.35;
 
-    public class getPrix()
+    public double getPrix()
 
     {
-        return Prix;}
+        return prix;}
 
-        public class toString () {
-        System.out.println("Vitre électrique");
+        public String toString () {
+        return "Vitre électrique";
     }
 
 

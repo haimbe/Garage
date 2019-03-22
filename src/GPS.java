@@ -1,13 +1,13 @@
 public class GPS {
     double prix = 223.5;
 
-    public class getPrix()
+    public double getPrix()
 
     {
-        return Prix;}
+        return prix;}
 
-        public class toString () {
-        System.out.println("GP");
+        public String toString () {
+        return "GP";
     }
 
 

@@ -1,10 +1,10 @@
 public enum Marque {
 
-    Laguna ("RENO"),
+    Reno ("RENO"),
 
-    D4 ("TROEN"),
+    TROEN ("TROEN"),
 
-    A300B ("PIGEOT");
+    PIGEOT ("PIGEOT");
 
 
     private String name = "";

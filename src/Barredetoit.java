@@ -1,13 +1,13 @@
 public class Barredetoit {
     double prix = 29.9;
 
-    public class getPrix()
+    public double getPrix()
 
     {
-        return Prix;}
+        return prix;}
 
-        public class toString () {
-        System.out.println("Barre de toit");
+        public String toString () {
+        return"Barre de toit";
     }
 
 

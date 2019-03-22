@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
-abstract class Vehicule {
+public class Vehicule  {
 
     Double prix;
     String nom;
-    int option [];
+    ArrayList <Option>;
     Marque marque;
 
     void class getMarque();
