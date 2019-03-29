@@ -1,13 +1,6 @@
-public class MoteurHybride {
+public class MoteurHybride extends Moteur{
 
-    double prix = 28457.0;
-
-    public double getPrix()
-
-    {
-        return prix;}
-
-    public String toString () {
-        return"Moteur HYBRIDE";
+     public String toString () {
+        return"Moteur HYBRIDE (28457€) ";
     }
 }

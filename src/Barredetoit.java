@@ -1,5 +1,11 @@
 public class Barredetoit {
     double prix = 29.9;
+    String nom = "Barre de toit";
+
+    public void Barredetoit(){
+        double prix = 0;
+        String nom = "Barre de toit";
+    }
 
     public double getPrix()
 
@@ -7,7 +13,7 @@ public class Barredetoit {
         return prix;}
 
         public String toString () {
-        return"Barre de toit";
+        return nom + getPrix();
     }
 
 

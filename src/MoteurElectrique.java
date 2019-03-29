@@ -1,19 +1,13 @@
-public class MoteurElectrique {
-
-    int puissance;
-    int cylindre;
+public class MoteurElectrique extends Moteur{
 
     void MoteurElectrique(){
 
-        puissance=0;
-        cylindre=0;
+        puissance = "default";
+        prix=0;
 
-     public String toString(int puissance,int cylindre){
+     public String toString(){
 
-         this.puissance=puissance;
-         this.cylindre=cylindre;
-
-         System.out.println("Moteur ELECTRIQUE "+this.puissance+"W"+" ("+(this.cylindre*23)+"€)");
+          return "Moteur ELECTRIQUE "+puissance+"W"+" ("+prix+"€)");
         }
 
     }

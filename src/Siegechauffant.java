@@ -1,5 +1,12 @@
 public class Siegechauffant {
     double prix = 562.9;
+    String nom = "Siège chauffant";
+
+    public void Siegechauffant(){
+
+        double prix = 0;
+        String nom = "Siège chauffant";
+    }
 
     public double getPrix()
 
@@ -7,7 +14,7 @@ public class Siegechauffant {
         return prix;}
 
         public String toString () {
-        return "Siège chauffant";
+        return nom + getPrix();
     }
 
 }

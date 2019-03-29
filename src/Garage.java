@@ -10,22 +10,20 @@ public class Garage {
 
         {
 
-            System.out.println(i + "\n");
+            return voiture[i].TypeMoteur.toString() + "\n");
 
         }
 
-        if(voiture.size() < 1)
+        if(voiture.size() == 0)
             System.out.println("Garage Vide !)";
 
 
-    }
+    };
 
-    String nom;
 
-    void addVoiture(String nom){
+    public void addVoiture(Vehicule vehicule){
 
-        this.nom = nom;
 
-        voiture.add(nom);
+        voiture.add(vehicule);
     } ;
 }

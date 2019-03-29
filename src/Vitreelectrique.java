@@ -1,5 +1,12 @@
 public class Vitreelectrique {
     double prix = 252.35;
+    String nom = "Vitre électrique";
+
+    public void Vitreelectrique(){
+
+        double prix = 0;
+        String nom = "Vitre électrique";
+    }
 
     public double getPrix()
 
@@ -7,7 +14,7 @@ public class Vitreelectrique {
         return prix;}
 
         public String toString () {
-        return "Vitre électrique";
+        return nom + getPrix();
     }
 
 

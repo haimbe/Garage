@@ -1,19 +1,24 @@
-public class MoteurDiesel {
+public class MoteurDiesel extends Moteur{
 
-    int puissance;
-    int cylindre;
+     void MoteurDiesel(){
 
-    void MoteurDiesel(){
+        puissance = "default";
+        prix = 0;
 
-        puissance=0;
-        cylindre=0;
-
-        public String toString(int puissance,int cylindre){
+        void MoteurDiesel(puissance , prix){
 
             this.puissance=puissance;
-            this.cylindre=cylindre;
+            this.prix=prix;
+         }
 
-            System.out.println("Moteur DIESEL "+this.puissance+"W"+" ("+(this.cylindre*2.25)+"€)");
+         double getPrix(){
+            return prix;
+         }
+
+        public String toString(){
+
+
+            return "Moteur DIESEL "+puissance+"W"+" ("+prix+"€)");
         }
 
     }
