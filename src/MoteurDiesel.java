@@ -4,12 +4,14 @@ public class MoteurDiesel extends Moteur{
 
         puissance = "default";
         prix = 0;
+        this.typeMoteur=TypeMoteur.DIESEL;
 
         void MoteurDiesel(puissance , prix){
 
             this.puissance=puissance;
             this.prix=prix;
-         }
+
+            }
 
          double getPrix(){
             return prix;
@@ -20,6 +22,7 @@ public class MoteurDiesel extends Moteur{
 
             return "Moteur DIESEL "+puissance+"W"+" ("+prix+"€)");
         }
+
 
     }
 }

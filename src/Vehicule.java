@@ -7,14 +7,19 @@ public class Vehicule  {
     ArrayList <Option>;
     Marque marque;
 
-    void class getMarque(Marque);
+    void class getMarque();
     void class getOptions();
-
-    double class getPrix(){
-       return Moteur.getPrix()+Option.getPrix()
-    };
 
     void class addOption(Option);
     void class toString();
     void class setMoteur(Moteur);
+
+    public Double total(){
+        double result=0.0;
+
+        for(int i = 0; i < Option.size(); i++)
+        {
+           result +=Option.getPrix(i);
+        }
+        return result;
 }

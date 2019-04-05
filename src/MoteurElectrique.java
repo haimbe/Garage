@@ -4,11 +4,20 @@ public class MoteurElectrique extends Moteur{
 
         puissance = "default";
         prix=0;
+        this.typeMoteur=TypeMoteur.ELECTRIQUE;
 
-     public String toString(){
+        void MoteurElectrique(puissance , prix){
 
-          return "Moteur ELECTRIQUE "+puissance+"W"+" ("+prix+"€)");
-        }
+                this.puissance=puissance;
+                this.prix=prix;
+
+            }
+
+            double getPrix(){
+                return prix;
+            }
+
+
 
     }
 
