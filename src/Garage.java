@@ -2,25 +2,35 @@ import java.util.ArrayList;
 
 public class Garage {
 
-    ArrayList voiture = new ArrayList();
+    ArrayList voitures = new ArrayList();
 
-    static void garageAppend() {
+    if(voitures.size() == 0){
+            System.out.println("Garage Vide !)"};
+
+    else
+
+    {
+
+        @Override
+        public String toString () {
+        String result;
+        return super.toString();
         StringBuilder sb = new StringBuilder();
-        sb.append("Voiture Marque ");
-        sb.append(this.getMarque());
-        sb.append(this.typeMoteur);
-        for (int i = 0; i < voiture.size(); i++) {
-            String str;
-            str = +=Option.get(i).toString;
-            sb.append(str);
-            }
-        sb.append(this.result);
-        return(sb);
+        sb.append(super.toString());
+        for (int i = 0; i < voitures.size(); i++) {
 
+            return result = Option.get(i).toString;
+        }
+
+        sb.append(result);
+        return (sb.toString());
+    }
     }
 
-            if(voiture.size() == 0)
-            System.out.println("Garage Vide !)";
+
+
+
+
 
 
 
@@ -29,6 +39,6 @@ public class Garage {
     public void addVoiture(Vehicule vehicule){
 
 
-        voiture.add(vehicule);
+        voitures.add(vehicule);
     } ;
 }

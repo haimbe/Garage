@@ -1,25 +1,45 @@
 import java.util.ArrayList;
 
-public class Vehicule  {
+public class Vehicule {
 
     Double prix;
     String nom;
-    ArrayList <Option>;
+    ArrayList<Option> options;
     Marque marque;
+    Moteur moteur;
 
-    void class getMarque();
-    void class getOptions();
+    public Marque getMarque() {
+        return this.marque;
+    }
 
-    void class addOption(Option);
-    void class toString();
-    void class setMoteur(Moteur);
 
-    public Double total(){
-        double result=0.0;
+    public void ArrayList Option getOption() {
+        return <this.options> ;
+    }
 
-        for(int i = 0; i < Option.size(); i++)
-        {
-           result +=Option.getPrix(i);
+
+    public void addOption(Option option) {
+
+        this.options.add(option);}
+
+
+
+    public String toString(){
+        return this.nom.toString()+this.moteur.toString();}
+
+
+
+    public void setMoteur(Moteur moteur) {
+        this.moteur = moteur;
+    }
+
+
+    public double getPrix() {
+        double result = 0.0;
+
+        for (int i = 0; i < options.size(); i++) {
+            result += options.get(i).getPrix();
         }
-        return result;
+        return result + this.moteur.getPrix();
+    }
 }

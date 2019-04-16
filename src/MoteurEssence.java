@@ -1,25 +1,21 @@
 public class MoteurEssence extends Moteur{
 
-    String puissance;
-    Double prix;
 
-   void MoteurEssence(){
 
-        puissance ="default";
-        prix = 0.0;
-       this.typeMoteur=TypeMoteur.ESSENCE;}
 
-       void MoteurEssence(puissance , prix){
+       void MoteurEssence(String puissance , double prix){
 
            this.puissance=puissance;
            this.prix=prix;
+           this.typeMoteur=TypeMoteur.ESSENCE;
 
        }
 
-       double getPrix(){
-           return prix;
-       }
+    public String toString(){
+
+        return "Moteur "+ this.typeMoteur.toString() + " "+ this.puissance+ " Chevaux " + "("+this.prix+")"+" ";
+    }
 
 
     }
-}
+

@@ -3,7 +3,13 @@ abstract class Moteur {
     TypeMoteur typeMoteur;
     String puissance;
     double prix;
-    void class getPrix();
+    public double getPrix(){
+        return prix;
+    };
+
+    public String toString(){
+        return this.typeMoteur.toString();
+    }
 
 
 

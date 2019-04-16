@@ -1,25 +1,24 @@
 public class MoteurElectrique extends Moteur{
 
-    void MoteurElectrique(){
 
-        puissance = "default";
-        prix=0;
-        this.typeMoteur=TypeMoteur.ELECTRIQUE;
 
-        void MoteurElectrique(puissance , prix){
+
+        void MoteurElectrique( String puissance , double prix){
 
                 this.puissance=puissance;
                 this.prix=prix;
+            this.typeMoteur=TypeMoteur.ELECTRIQUE;
 
             }
 
-            double getPrix(){
-                return prix;
-            }
+    public String toString(){
+
+        return "Moteur "+ this.typeMoteur.toString() + " "+ this.puissance+ " Chevaux " + "("+this.prix+")"+" ";
+    }
+
 
 
 
     }
 
 
-}

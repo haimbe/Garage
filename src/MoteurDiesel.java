@@ -1,28 +1,24 @@
 public class MoteurDiesel extends Moteur{
 
-     void MoteurDiesel(){
 
-        puissance = "default";
-        prix = 0;
-        this.typeMoteur=TypeMoteur.DIESEL;
 
-        void MoteurDiesel(puissance , prix){
+        void MoteurDiesel(String puissance , double prix){
 
             this.puissance=puissance;
             this.prix=prix;
+            this.typeMoteur=TypeMoteur.DIESEL;
 
             }
 
-         double getPrix(){
-            return prix;
-         }
-
         public String toString(){
 
-
-            return "Moteur DIESEL "+puissance+"W"+" ("+prix+"€)");
+            return "Moteur "+ this.typeMoteur.toString() + " "+ this.puissance+ " Chevaux " + "("+this.prix+")"+" ";
         }
 
 
+
+
+
+
     }
-}
+
