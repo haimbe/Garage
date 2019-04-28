@@ -3,7 +3,7 @@ public class MoteurEssence extends Moteur{
 
 
 
-       void MoteurEssence(String puissance , double prix){
+       public void MoteurEssence(String puissance , double prix){
 
            this.puissance=puissance;
            this.prix=prix;

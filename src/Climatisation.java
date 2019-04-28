@@ -1,11 +1,7 @@
-public class Climatisation {
+public class Climatisation implements Option{
     double prix = 347.3;
     String nom = "Climatisation";
 
-    public void Climatisation(){
-        double prix = 0;
-        String nom = "Climatisation";
-    }
 
     public double getPrix()
 

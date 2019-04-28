@@ -1,12 +1,7 @@
-public class Siegechauffant {
+public class Siegechauffant implements Option{
     double prix = 562.9;
     String nom = "Siège chauffant";
 
-    public void Siegechauffant(){
-
-        double prix = 0;
-        String nom = "Siège chauffant";
-    }
 
     public double getPrix()
 

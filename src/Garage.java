@@ -4,36 +4,25 @@ public class Garage {
 
     ArrayList voitures = new ArrayList();
 
+
+    public String toString() {
+
     if(voitures.size() == 0){
-            System.out.println("Garage Vide !)"};
+            return "Garage Vide !";}
 
     else
 
     {
 
-        @Override
-        public String toString () {
-        String result;
-        return super.toString();
         StringBuilder sb = new StringBuilder();
-        sb.append(super.toString());
         for (int i = 0; i < voitures.size(); i++) {
+            sb.append(voitures.get(i).toString());}
 
-            return result = Option.get(i).toString;
+            return sb.toString();
         }
 
-        sb.append(result);
-        return (sb.toString());
+
     }
-    }
-
-
-
-
-
-
-
-
 
 
     public void addVoiture(Vehicule vehicule){

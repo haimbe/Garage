@@ -1,13 +1,10 @@
-public class GPS {
+public class GPS implements Option{
     double prix = 223.5;
     String nom = "GPS";
 
-    public void GPS(){
 
-        double prix = 0;
-        String nom = "GPS";
 
-    }
+
 
     public double getPrix()
     {

@@ -1,12 +1,7 @@
-public class Vitreelectrique {
+public class Vitreelectrique implements Option {
     double prix = 252.35;
     String nom = "Vitre électrique";
 
-    public void Vitreelectrique(){
-
-        double prix = 0;
-        String nom = "Vitre électrique";
-    }
 
     public double getPrix()
 

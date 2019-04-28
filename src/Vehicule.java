@@ -13,8 +13,8 @@ public class Vehicule {
     }
 
 
-    public void ArrayList Option getOption() {
-        return <this.options> ;
+    public ArrayList <Option> getoptions() {
+        return this.options ;
     }
 
 
@@ -25,7 +25,11 @@ public class Vehicule {
 
 
     public String toString(){
-        return this.nom.toString()+this.moteur.toString();}
+
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < options.size(); i++) {
+            sb.append(options.get(i).toString());}
+        return this.nom+this.moteur.toString()+sb.toString();}
 
 
 

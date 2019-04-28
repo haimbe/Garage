@@ -1,11 +1,8 @@
-public class Barredetoit {
+public class Barredetoit implements Option{
     double prix = 29.9;
     String nom = "Barre de toit";
 
-    public void Barredetoit(){
-        double prix = 0;
-        String nom = "Barre de toit";
-    }
+
 
     public double getPrix()
 
