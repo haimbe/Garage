@@ -9,7 +9,7 @@ public class Siegechauffant implements Option{
         return prix;}
 
         public String toString () {
-        return nom + getPrix();
+        return nom +" "+"("+ getPrix()+")";
     }
 
 }

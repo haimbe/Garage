@@ -2,7 +2,7 @@ public class MoteurDiesel extends Moteur{
 
 
 
-       public void MoteurDiesel(String puissance , double prix){
+       public MoteurDiesel(String puissance , double prix){
 
             this.puissance=puissance;
             this.prix=prix;

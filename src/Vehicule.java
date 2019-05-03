@@ -4,7 +4,7 @@ public class Vehicule {
 
     Double prix;
     String nom;
-    ArrayList<Option> options;
+    ArrayList<Option> options = new ArrayList<>();
     Marque marque;
     Moteur moteur;
 
@@ -22,22 +22,6 @@ public class Vehicule {
 
         this.options.add(option);}
 
-
-
-    public String toString(){
-
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < options.size(); i++) {
-            sb.append(options.get(i).toString());}
-        return this.nom+this.moteur.toString()+sb.toString();}
-
-
-
-    public void setMoteur(Moteur moteur) {
-        this.moteur = moteur;
-    }
-
-
     public double getPrix() {
         double result = 0.0;
 
@@ -46,4 +30,22 @@ public class Vehicule {
         }
         return result + this.moteur.getPrix();
     }
+
+
+
+    public String toString(){
+
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < options.size(); i++) {
+            sb.append(options.get(i).toString()+" ");}
+        return this.nom+" "+this.marque+" "+this.moteur.toString()+sb.toString()+" prix total = "+this.getPrix();}
+
+
+
+    public void setMoteur(Moteur moteur) {
+        this.moteur = moteur;
+    }
+
+
+
 }

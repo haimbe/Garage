@@ -16,7 +16,7 @@ public class Garage {
 
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < voitures.size(); i++) {
-            sb.append(voitures.get(i).toString());}
+            sb.append(voitures.get(i).toString()+"\n");}
 
             return sb.toString();
         }

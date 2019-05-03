@@ -6,8 +6,5 @@ public class Laguna extends Vehicule {
         this.nom="Laguna";
     }
 
-    public String toString(){
 
-        return "Voiture "+this.marque.toString()+" : Laguna ";
-    }
 }

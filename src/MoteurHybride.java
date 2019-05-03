@@ -1,8 +1,9 @@
 public class MoteurHybride extends Moteur{
 
-    public void MoteurHybride(){
+    public MoteurHybride(String puissance , double prix){
 
-        prix = 28457;
+        this.puissance=puissance;
+        this.prix = prix;
         this.typeMoteur=TypeMoteur.HYBRID;
 
     }
@@ -12,3 +13,5 @@ public class MoteurHybride extends Moteur{
         return "Moteur "+ this.typeMoteur.toString() + " "+ "("+this.prix+")"+" ";
     }
 }
+
+

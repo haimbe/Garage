@@ -5,8 +5,5 @@ public class D4 extends Vehicule{
         this.marque=Marque.TROEN;
         this.nom="D4";
         }
-    public String toString(){
 
-        return "Voiture "+this.marque.toString()+" : D4 ";
-    }
 }
